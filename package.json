@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.ts",
-    "live": "ts-node index.ts"
+    "live": "ts-node ProbablyNotBot.ts"
   },
   "keywords": [],
   "author": "",

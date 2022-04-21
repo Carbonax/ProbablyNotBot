@@ -2,3 +2,5 @@
 !/.gitignore
 node_modules
 replit.nix
+ProbablyNotBot.ts
+code_server
