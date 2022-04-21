@@ -2,5 +2,3 @@
 !/.gitignore
 node_modules
 replit.nix
-replit-deploy.json
-repl.deploy
