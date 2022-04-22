@@ -3,7 +3,6 @@ import {
 	Client,
 	CommandInteraction,
 	Guild,
-	Interaction,
 	MessageReaction,
 	PartialMessageReaction,
 	PartialUser,

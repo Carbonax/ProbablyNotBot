@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { CommandInteraction, GuildMemberManager, Message } from "discord.js";
+import { CommandInteraction } from "discord.js";
 import logger from "../modules/logger";
 
 export const data = new SlashCommandBuilder()

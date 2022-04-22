@@ -1,6 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
 import { CommandInteraction } from "discord.js";
-import logger from "../modules/logger";
 
 export const data = new SlashCommandBuilder()
 	.setName("ping")
