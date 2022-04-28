@@ -5,7 +5,7 @@ import { config } from "dotenv";
 import fs from "node:fs";
 import logger from "../modules/logger";
 import command_listener from "./command_listener";
-import permissions_constructor from "./perm_reconstructor";
+// import permissions_constructor from "./perm_reconstructor";
 
 config();
 
@@ -22,15 +22,17 @@ export default (client: Client) => {
 	for (const file of commandFiles) {
 		const command = require(`../commands/${file}`);
 
-		if (command.perms) {
-			guild.commands.fetch().then(async (result) => {
-				await result
-					.find((cmdResult) => cmdResult.name == command.data.name)
-					?.permissions.set({
-						permissions: permissions_constructor(guild, command.perms),
-					});
-			});
-		}
+		// SLASH COMMANDS PERMISSIONS V1
+		//
+		// if (command.perms) {
+		// 	guild.commands.fetch().then(async (result) => {
+		// 		await result
+		// 			.find((cmdResult) => cmdResult.name == command.data.name)
+		// 			?.permissions.set({
+		// 				permissions: permissions_constructor(guild, command.perms),
+		// 			});
+		// 	});
+		// }
 
 		command_listener(
 			client,
